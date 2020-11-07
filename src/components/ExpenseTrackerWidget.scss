@@ -1,0 +1,60 @@
+.expense-widget {
+  width: 500px;
+  max-height: 720px;
+  background-color: #fff;
+  overflow-y: auto;
+
+  .balance {
+    text-align: center;
+    .title {
+      margin-bottom: 5px;
+    }
+    .amount {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  .totals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .separator {
+      position: absolute;
+      height: 50px;
+      width: 1px;
+      background-color: #e5e5e5;
+    }
+
+    .total {
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+
+      h3.title {
+        margin-top: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      span.amount {
+        font-size: 26px;
+      }
+
+      &.income .amount {
+        color: #46c54f;
+      }
+
+      &.expenses .amount {
+        color: #f63333;
+      }
+    }
+  }
+
+  .transaction-list-container {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 300px;
+  }
+}

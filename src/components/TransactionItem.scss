@@ -1,0 +1,33 @@
+.transaction-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.expense {
+    border-right: 9px solid #f63333;
+  }
+  &.income {
+    border-right: 9px solid #46c54f;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .transaction {
+    &.type {
+      font-size: 12px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-right: 20px;
+    }
+
+    &.amount {
+      font-weight: bold;
+    }
+  }
+}

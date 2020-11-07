@@ -1,0 +1,16 @@
+.transaction-list-inner-container {
+    background-color: #efefef;
+    padding: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .no-transactions-message {
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
